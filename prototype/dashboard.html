@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="function.js"></script>
+    <title>Rezerwacje boisk</title>
+  </head>
+
+  <body>
+    <div id="app-bar">
+      <a>Rezerwacje boiska </a>
+      <a href="mainscreen.html">Strona glowna</a>
+      <a href="about.html">O projekcie</a>
+      <a href="login.html">Logowanie </a>
+      <a href="register.html">Rejestracja </a>
+    </div>
+    <div id="table-section">
+      <p>Rezerwacje</p>
+      <div id="table"></div>
+      <div id="add-reservation">
+        <div>
+          <input type="text" id="name" placeholder="Nazwa drużyny" />
+          <input type="text" id="date" placeholder="Data" />
+          <input type="text" id="From" placeholder="Od" />
+          <input type="text" id="To" placeholder="Do" />
+          <input type="text" id="place" placeholder="Miejsce" />
+        </div>
+        <div>
+          <button
+            type="button"
+            onclick="addReservation(document.getElementById('name').value,
+                document.getElementById('date').value,
+                document.getElementById('From').value,
+                document.getElementById('To').value,
+                document.getElementById('place').value)"
+          >
+            DODAJ
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

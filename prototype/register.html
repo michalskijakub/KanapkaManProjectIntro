@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="function.js"></script>
+    <title>Rezerwacje boisk</title>
+  </head>
+
+  <body>
+    <div id="app-bar">
+      <a>Rezerwacje boiska </a>
+      <a href="mainscreen.html">Strona glowna</a>
+      <a href="about.html">O projekcie</a>
+      <a href="login.html">Logowanie </a>
+      <a href="register.html">Rejestracja </a>
+    </div>
+    <div id="registration-section">
+      <p>Rejestracja</p>
+      <form name="user-login">
+        <div>
+          <input type="email" id="user_email" placeholder="Email" />
+        </div>
+        <div>
+          <input type="password" id="user_password" placeholder="Hasło" />
+        </div>
+        <div>
+          <input
+            type="password"
+            id="user_password_second"
+            placeholder="Powtórz hasło"
+          />
+        </div>
+        <div>
+          <input type="checkbox" id="accept" />
+          <label for="accept"> Akceptuję regulamin</label>
+        </div>
+
+        <div>
+          <input
+            type="submit"
+            id="login"
+            value="ZAREJESTRUJ SIĘ"
+            onclick="return registerFunction(document.getElementById('user_email').value, document.getElementById('user_password').value, document.getElementById('user_password_second').value, document.getElementById('accept').checked)"
+          />
+        </div>
+      </form>
+      <div>
+        <button type="button">REJESTRACJA PRZEZ GOOGLE</button>
+      </div>
+      <div>
+        <button type="button" onclick="location.href='login.html'">
+          MAM JUŻ KONTO - ZALOGUJ SIĘ
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
